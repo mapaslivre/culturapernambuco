@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodapé com 3 Colunas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .footer-column h3 {
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .footer-column p, 
+    .footer-column ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-button {
+      margin-top: 20px;
+    }
+
+    .footer-button a {
+      text-decoration: none;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .footer-button a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer">
+    <!-- Coluna 1: Endereço -->
+    <div class="footer-column">
+      <h3>Endereço</h3>
+      <p>
+        Rua Exemplo, 123<br>
+        Bairro Central<br>
+        Cidade, Estado<br>
+        CEP: 00000-000
+      </p>
+    </div>
+
+    <!-- Coluna 2: Contato -->
+    <div class="footer-column">
+      <h3>Contato</h3>
+      <ul>
+        <li>Telefone: (11) 1234-5678</li>
+        <li>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+        <li>WhatsApp: (11) 98765-4321</li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3: Link -->
+    <div class="footer-column">
+      <h3>Acesse</h3>
+      <div class="footer-button">
+        <a href="https://example.com" target="_blank">Visite Nosso Site</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
